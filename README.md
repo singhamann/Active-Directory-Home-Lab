@@ -35,47 +35,47 @@ This project documents a Windows Server 2022 Active Directory home lab built in 
 
 The lab started with a Windows Server 2022 virtual machine running inside Oracle VirtualBox. The server was configured and renamed as `DC01`.
 
-![Local Server DC01](Screenshots/01-local-server-dc01.png)
+![Local Server DC01](01-local-server-dc01.png)
 
 ### 2. Static IP and DNS Configuration
 
 A static IPv4 address was configured for the server. The preferred DNS server was set to the server's own IP address so it could act as the DNS server for the Active Directory domain.
 
-![Static IP and DNS Settings](Screenshots/02-static-ip-dns-settings.png)
+![Static IP and DNS Settings](02-static-ip-dns-settings.png)
 
 ### 3. Active Directory Domain Services Installation
 
 The Active Directory Domain Services role was selected and installed using Server Manager.
 
-![AD DS Role Selected](Screenshots/03-add-ad-ds-role.png)
+![AD DS Role Selected](03-add-ad-ds-role.png)
 
 ### 4. Domain Controller Promotion
 
 The server was promoted to a domain controller by creating a new forest with the root domain name `amanlab.local`.
 
-![New Forest Configuration](Screenshots/04-new-forest-amanlab-local.png)
+![New Forest Configuration](04-new-forest-amanlab-local.png)
 
 The prerequisites check completed successfully before the installation and promotion process continued.
 
-![Prerequisites Check Passed](Screenshots/05-prerequisites-check-passed.png)
+![Prerequisites Check Passed](05-prerequisites-check-passed.png)
 
 ### 5. Domain Administrator Login
 
 After promotion and reboot, the server was accessed using the `AMANLAB\Administrator` domain account.
 
-![Domain Administrator Login](Screenshots/06-domain-admin-login.png)
+![Domain Administrator Login](06-domain-admin-login.png)
 
 ### 6. Active Directory Administration Tools
 
 After AD DS was installed, Server Manager provided access to tools such as Active Directory Users and Computers, Active Directory Domains and Trusts, DNS, and Group Policy Management.
 
-![Administrative Tools Menu](Screenshots/07-administrative-tools-menu.png)
+![Administrative Tools Menu](07-administrative-tools-menu.png)
 
 ### 7. Active Directory Users and Computers
 
 Active Directory Users and Computers was used to view and manage the `amanlab.local` domain structure.
 
-![ADUC Domain Structure](Screenshots/08-aduc-domain-structure.png)
+![ADUC Domain Structure](08-aduc-domain-structure.png)
 
 ### 8. Organizational Units
 
@@ -87,25 +87,25 @@ Created OUs:
 - HR
 - Finance
 
-![Organizational Units Created](Screenshots/09-organizational-units-created.png)
+![Organizational Units Created](09-organizational-units-created.png)
 
 ### 9. User Account Creation
 
 A test user account was created in the IT Organizational Unit to practice user lifecycle administration.
 
-![Create User Account](Screenshots/10-create-user-john-smith.png)
+![Create User Account](10-create-user-john-smith.png)
 
 ### 10. Security Group Creation
 
 A security group named `IT Admins` was created to practice group-based access management.
 
-![Create Security Group](Screenshots/11-create-security-group-it-admins.png)
+![Create Security Group](11-create-security-group-it-admins.png)
 
 ### 11. User and Group Administration
 
 The lab included basic user and group management workflows such as adding users to groups and reviewing account administration options.
 
-![User and Group Administration](Screenshots/12-add-user-to-group-workflow.png)
+![User and Group Administration](12-add-user-to-group-workflow.png)
 
 ## Skills Demonstrated
 
